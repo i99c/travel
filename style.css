@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.header.sticky {
+    background: #BB9CC0;
+    box-shadow: 0 .1rem 1rem #67729D;
+}
+
+.header div {
+    font-size: 1.3rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #28C3D4;
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.1rem;
+    color: rgb(211, 207, 207);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a {
+    color: #248EA9;
+}
+
+.header.sticky .navbar a.active {
+    color: #5FBDFF;
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: var(--bg-color);
+}
+
+.header.sticky .navbar a::before {
+    background: #3C0753;
+    opacity: .7;
+}
+
+#darkMode-icon {
+    font-size: 20px !important;
+    color: #910A67;
+    cursor: pointer;
+}
+
+.header.sticky #darkMode-icon {
+    color: #030637;
+    opacity: .9;
+}
+
+h2 {
+    margin-top: 10%;
+    padding: 40px;
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    font-size: 5em;
+    background-image: url(https://cdn.pixabay.com/photo/2019/11/18/18/29/mountain-4635428_640.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+}
+
+.mekan-bir {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Ayasofya.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-bir::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-bir h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/Ayasofya.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-iki {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Bali\ Adası.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-iki::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-iki h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/Bali\ Adası.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-uc {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/büyük\ kanyon.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-uc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-uc h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/büyük\ kanyon.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-uc {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/büyük\ kanyon.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-uc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-uc h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/büyük\ kanyon.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-dort {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Colosseum.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-dort::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-dort h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/Colosseum.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-bes {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/çin\ seddi\ Büyük\ Duvar.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-bes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-bes h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/çin\ seddi\ Büyük\ Duvar.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-alti {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/eyfel\ kulesi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-alti::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-alti h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/eyfel\ kulesi.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
