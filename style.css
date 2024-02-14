@@ -421,3 +421,191 @@ h2 {
     white-space: pre;
     /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
 }
+
+.mekan-yedi {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Iguazu\ Şelaleleri.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-yedi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-yedi h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/Iguazu\ Şelaleleri.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-sekiz {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Machu\ Picchu.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-sekiz::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-sekiz h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/Machu\ Picchu.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-dokuz {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/taj\ mahal.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-dokuz::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-dokuz h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/taj\ mahal.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
+
+.mekan-on {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Uluru.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    /* Set a higher z-index for the main container */
+}
+
+.mekan-on::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.mekan-on h3 {
+    border-radius: 10px;
+    color: transparent !important;
+    text-align: center;
+    background-image: url(images/Uluru.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    font-family: "Macondo", cursive;
+    padding: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+    /* Adjust the line-height to create space between lines */
+    white-space: pre;
+    /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
+}
