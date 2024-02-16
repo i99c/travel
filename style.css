@@ -609,3 +609,41 @@ h2 {
     white-space: pre;
     /* Allow preformatted text, treating consecutive spaces as non-breaking spaces */
 }
+
+.mekan {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.mekan.visible {
+    opacity: 1;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    background-color: #008CBA;
+    /* Deniz mavisi */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #008CBA;
+    /* Deniz mavisi kenarlık */
+    border-radius: 10px;
+    /* Yumuşak köşeler */
+    padding: 10px 20px;
+    /* İçerik kenarlığı */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 370%;
+    margin-left: 340%;
+}
+
+.btn:hover {
+    background-color: #005f75;
+    /* Koyu deniz mavisi */
+    border-color: #005f75;
+    /* Koyu deniz mavisi kenarlık */
+}
